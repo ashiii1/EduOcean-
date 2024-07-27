@@ -218,8 +218,10 @@ const TeacherLand = () => {
 
   return (
     <div className="flex">
+       
       <TeacherSidebar />
       <div className="flex-1 ml-64 bg-cover bg-center min-h-screen" style={{ backgroundImage: `url('')` }}>
+      
         <nav className="bg-gray-800 p-4 flex items-center justify-between">
           <div className="flex items-center">
             <p className="text-white text-xl">
@@ -227,7 +229,7 @@ const TeacherLand = () => {
             </p>
           </div>
           <button
-          className="bg-green-500 text-black hover:bg-gray-500 px-4 py-2 rounded focus:outline-none focus:shadow-outline"
+          className="bg-purple-600 text-white text-1xl  hover:bg-gray-500 px-7 py-5 rounded focus:outline-none focus:shadow-outline"
           onClick={handleAddCourse}
         >
           Create Course
@@ -235,7 +237,7 @@ const TeacherLand = () => {
         </nav>
 
         <div className="container mx-auto p-6">
-          <h2 className="text-black text-2xl mb-4">Your Courses</h2>
+          <h2 className="text-black text-2xl mb-4">click on create course</h2>
           {teacherData.courses.length === 0 ? (
             <p className="text-black">No courses yet created.</p>
           ) : (

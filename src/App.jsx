@@ -307,8 +307,11 @@ import StudentQue from './components/StudentQue';
 import Assessment from './components/Assessment';
 import './index.css'
 import WeeklyContest from './components/WeeklyContest';
-import RecordingList from './components/RecordingList';
+// import RecordingList from './components/RecordingList';
 import StudentHome from './components/StudentHome';
+import AddRecordings from './components/AddRecordings';
+import StudentsData from './components/StudentsData';
+import AddAssessments from './components/AddAssessments';
 
 // import MApp from './App';
 
@@ -340,10 +343,12 @@ function App() {
             <Route path="/enrolled-courses/:studentId" element={<StudentEnrolled />} />
             <Route path="/assessments" element={<Assessment/>} />
             <Route path="/contest" element={<WeeklyContest/>} />
-            <Route path="/recordings" element={<RecordingList/>} />
-            <Route path="/student-land/:studentId/studenthome" element={<StudentHome/>} />
+            {/* <Route path="/recordings" element={<RecordingList/>} /> */}
+            <Route path="/studenthome" element={<StudentHome/>} />
 
-
+            <Route path="/addrecordings" element={<AddRecordings/>} />
+            <Route path="/studentdata" element={<StudentsData/>} />
+            <Route path="/addassessments" element={<AddAssessments/>} />
 
             {/* Quiz App Routes */}
        

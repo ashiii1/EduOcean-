@@ -43,7 +43,7 @@ function CoursePage() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="videoUrl" className="block text-orange-500 text-lg font-bold mb-2">
+            <label htmlFor="videoUrl" className="block text-black text-lg font-bold mb-2">
               Video URL
             </label>
             <input
@@ -57,7 +57,7 @@ function CoursePage() {
           </div>
           <button
             onClick={handleAddVideoToCourse}
-            className="bg-orange-500 text-white hover:bg-orange-700 px-4 py-2 rounded focus:outline-none focus:shadow-outline w-full md:w-64"
+            className="bg-black text-white hover:bg-orange-700 px-4 py-2 rounded focus:outline-none focus:shadow-outline w-full md:w-64"
           >
             Add Video
           </button>

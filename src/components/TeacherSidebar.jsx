@@ -2,10 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 
-
-
-
-
 const TeacherSidebar = () => {
     return (
         <aside className="bg-gray-800 text-white p-4 md:w-64 h-screen fixed left-0 top-0 overflow-y-auto ">
@@ -13,9 +9,10 @@ const TeacherSidebar = () => {
             <h2 className="text-white text-3xl font-semibold">Sidebar</h2>
           </div>
           <ul className="space-y-4 font-sans pb-10 text-2xl ">
-            <li className='pb-5'>
+
+            {/* <li className='pb-5'>
               <NavLink
-                to="/"
+                to=""
                 exact
                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
               >
@@ -25,31 +22,40 @@ const TeacherSidebar = () => {
            
             <li className='pb-5'>
               <NavLink
-                to="/assessments"
+                to=""
                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
               >
-                My Assessments
+                Add Quiz
               </NavLink>
             </li>
            
     
             <li className='pb-5 '>
               <NavLink
-                to="/recordings"
+                to=""
                 style={{ marginBottom: '20px' }}
                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
               >
-                Recordings
+                Add Recordings
               </NavLink>
             </li>
           
             <li className='pb-5 '>
               <NavLink
-                to="/student-queries"
+                to="/"
                 
                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
               >
-                Ask queries
+                Students data
+              </NavLink>
+            </li> */}
+            <li className='pb-5 '>
+              <NavLink
+                to="/"
+                
+                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+              >
+                Logout
               </NavLink>
             </li>
            
