@@ -122,8 +122,14 @@ const SignInTeacher = () => {
   };
 
   return (
+    <>
+ 
 <div className="flex items-center justify-center min-h-screen bg-white p-6 w-full" style={{ backgroundImage: "url('https://www.creativefabrica.com/wp-content/uploads/2023/01/14/Floral-Frame-Background-Graphics-57610572-1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          
+    <div className='items-start pb-72 pt-5'>
+<h2 className='text-xl font-bold text-center'>Use these credentials to try</h2>
+<h2 className='text-xl font-bold'>Email- aashishaik526@gmail.com</h2>
+<h2 className='text-xl font-bold'>Password- Aashi@111</h2>
+  </div>
       <div className="card shadow-2xl h-1/2 md:w-1/2 xl:w-1/3 bg-zinc-300 rounded-md">
         <div className="form-container p-6">
           <h2 className="text-black text-xl mb-8">Signin As Instructor</h2>
@@ -152,8 +158,10 @@ const SignInTeacher = () => {
 
           </form>
         </div>
+ 
       </div>
     </div>
+    </>
   );
 };
 

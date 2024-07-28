@@ -1,74 +1,74 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+// import React from 'react'
+// import { NavLink } from 'react-router-dom';
 
 
-const TeacherSidebar = () => {
-    return (
-        <aside className="bg-gray-800 text-white p-4 md:w-64 h-screen fixed left-0 top-0 overflow-y-auto ">
-          <div className="flex justify-center my-4 p-5 ">
-            <h2 className="text-white text-3xl font-semibold">Sidebar</h2>
-          </div>
-          <ul className="space-y-4 font-sans pb-10 text-2xl ">
+// const TeacherSidebar = () => {
+//     return (
+//         <aside className="bg-gray-800 text-white p-4 md:w-64 h-screen fixed left-0 top-0 overflow-y-auto ">
+//           <div className="flex justify-center my-4 p-5 ">
+//             <h2 className="text-white text-3xl font-semibold">Sidebar</h2>
+//           </div>
+//           <ul className="space-y-4 font-sans pb-10 text-2xl ">
 
-            {/* <li className='pb-5'>
-              <NavLink
-                to=""
-                exact
-                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
-              >
-                Home
-              </NavLink>
-            </li>
+//             <li className='pb-5'>
+//               <NavLink
+//                 to=""
+//                 exact
+//                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+//               >
+//                 Home
+//               </NavLink>
+//             </li>
            
-            <li className='pb-5'>
-              <NavLink
-                to=""
-                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
-              >
-                Add Quiz
-              </NavLink>
-            </li>
+//             <li className='pb-5'>
+//               <NavLink
+//                 to=""
+//                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+//               >
+//                 Add Quiz
+//               </NavLink>
+//             </li>
            
     
-            <li className='pb-5 '>
-              <NavLink
-                to=""
-                style={{ marginBottom: '20px' }}
-                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
-              >
-                Add Recordings
-              </NavLink>
-            </li>
+//             <li className='pb-5 '>
+//               <NavLink
+//                 to=""
+//                 style={{ marginBottom: '20px' }}
+//                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+//               >
+//                 Add Recordings
+//               </NavLink>
+//             </li>
           
-            <li className='pb-5 '>
-              <NavLink
-                to="/"
+//             <li className='pb-5 '>
+//               <NavLink
+//                 to=""
                 
-                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
-              >
-                Students data
-              </NavLink>
-            </li> */}
-            <li className='pb-5 '>
-              <NavLink
-                to="/"
+//                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+//               >
+//                 Students data
+//               </NavLink>
+//             </li> 
+//             <li className='pb-5 '>
+//               <NavLink
+//                 to="/"
                 
-                className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
-              >
-                Logout
-              </NavLink>
-            </li>
+//                 className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+//               >
+//                 Logout
+//               </NavLink>
+//             </li>
            
           
            
            
-          </ul>
-        </aside>
-      );
-    };
+//           </ul>
+//         </aside>
+//       );
+//     };
     
 
-export default TeacherSidebar
+// export default TeacherSidebar
 
 
 // import React, { useState } from 'react';
@@ -136,3 +136,67 @@ export default TeacherSidebar
 // };
 
 // export default TeacherSidebar;
+
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+const TeacherSidebar = ({ sidebarVisible, setSidebarVisible }) => {
+  return (
+    <aside className={`bg-gray-800 text-white p-4 md:w-64 h-screen fixed left-0 top-0 overflow-y-auto transform ${sidebarVisible ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out`}>
+      <div className="flex justify-between items-center my-4 p-5">
+        <h2 className="text-white text-3xl font-semibold">Sidebar</h2>
+        <button className="md:hidden text-white" onClick={() => setSidebarVisible(false)}>✖</button>
+      </div>
+      <ul className="space-y-4 font-sans pb-10 text-2xl">
+        <li className='pb-5'>
+          <NavLink
+            to="/"
+            exact
+            className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+            onClick={() => setSidebarVisible(false)}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className='pb-5'>
+          <NavLink
+            to="/assessments"
+            className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+            onClick={() => setSidebarVisible(false)}
+          >
+            Add Quiz
+          </NavLink>
+        </li>
+        <li className='pb-5'>
+          <NavLink
+            to="/recordings"
+            className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+            onClick={() => setSidebarVisible(false)}
+          >
+            Add Recordings
+          </NavLink>
+        </li>
+        <li className='pb-5'>
+          <NavLink
+            to="/student-queries"
+            className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+            onClick={() => setSidebarVisible(false)}
+          >
+            Students data
+          </NavLink>
+        </li>
+        <li className='pb-5'>
+          <NavLink
+            to="/"
+            className="text-white hover:bg-white hover:text-black px-4 py-2 rounded mb-4 w-full"
+            onClick={() => setSidebarVisible(false)}
+          >
+            Logout
+          </NavLink>
+        </li>
+      </ul>
+    </aside>
+  );
+};
+
+export default TeacherSidebar;

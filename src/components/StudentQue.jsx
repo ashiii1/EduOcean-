@@ -66,12 +66,7 @@ const StudentQue = () => {
       <MainNavbar />
       <div className="flex flex-1 pt-16">
         {/* Sidebar */}
-        <nav className="bg-white w-64 p-4 h-full shadow-lg">
-          <div className="mt-20 ml-4 text-lg">
-            <a href="/student-que" className="block text-black hover:text-gray-500">Student Questions</a>
-          </div>
-        </nav>
-
+       
         {/* Content Area */}
         <main className="flex-1 p-6 ml-32">
           <h1 className="text-3xl font-bold mb-6">Student Questions</h1>

@@ -23,13 +23,7 @@ const AboutPage = () => {
       <MainNavbar />
       <div className="flex flex-1 pt-16">
         {/* Sidebar */}
-        <nav className="bg-white w-64 p-4 h-full shadow-lg">
-          <div className="mt-20 ml-4 text-lg">
-            <a href="/about-us" className="block text-black hover:text-gray-500">
-              About Us
-            </a>
-          </div>
-        </nav>
+       
 
         {/* Content Area */}
         <main className="flex-1 p-6">

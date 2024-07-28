@@ -122,6 +122,8 @@ const TeacherRegisterPage = () => {
   return (
 <div className="flex items-center justify-center min-h-screen bg-white p-6 w-full" style={{ backgroundImage: "url('https://www.creativefabrica.com/wp-content/uploads/2023/01/14/Floral-Frame-Background-Graphics-57610572-1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
 <div className="card shadow-2xl h-1/2 md:w-1/2 xl:w-1/3 bg-gray-300">
+
+
         <div className="form-container p-6">
           <div className="form teacher-form">
             <h2 className="text-black text-md mb-8">Teacher Registration</h2>
